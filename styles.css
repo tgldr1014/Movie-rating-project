@@ -1,0 +1,68 @@
+:root{
+  --max-width: 1000px;
+  --accent: #2a6f97;
+  --muted: #666;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0;
+  color:#222;
+  line-height:1.4;
+  background:#f7f7f7;
+}
+
+.container{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:1rem;
+}
+
+.site-header{
+  background:var(--accent);
+  color:white;
+}
+.site-header .container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.site-header h1 a{color:white; text-decoration:none}
+.site-header nav a{color:white; margin-left:1rem; text-decoration:none; font-weight:600}
+
+.hero{
+  padding:2rem 0;
+  text-align:center;
+}
+
+.featured, .latest, .review-list{
+  margin:1.5rem 0;
+}
+
+/* card */
+.card{display:flex; gap:1rem; background:white; padding:1rem; border-radius:6px; box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.card img{width:140px; height:90px; object-fit:cover; border-radius:4px}
+.card-body h4{margin:0 0 .25rem 0}
+
+.list{list-style:none; padding:0}
+.list li{background:white; margin:0.5rem 0; padding:0.75rem; border-radius:6px}
+
+/* reviews */
+.review{background:white; padding:1rem; border-radius:6px; margin-bottom:1rem}
+.meta{color:var(--muted); font-size:.9rem}
+
+/* movie detail */
+.movie-detail{display:flex; gap:1rem; align-items:flex-start}
+.movie-poster{width:260px; height:360px; object-fit:cover; border-radius:6px}
+
+/* footer */
+.site-footer{background:#222; color:white; padding:1rem 0; margin-top:2rem}
+.site-footer p{margin:0; text-align:center; font-size:.95rem}
+
+/* responsive */
+@media (max-width:800px){
+  .site-header .container{flex-direction:column; gap:.5rem; align-items:flex-start}
+  .movie-detail{flex-direction:column; align-items:center}
+  .movie-poster{width:80%; height:auto}
+}

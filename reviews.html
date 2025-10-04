@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="mn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interstellar — Сэтгэгдэл</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1><a href="index.html">Кино Үнэлгээ</a></h1>
+      <nav>
+        <a href="index.html">Нүүр</a>
+        <a href="reviews.html">Сэтгэгдэл</a>
+        <a href="movie.html">Interstellar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Interstellar — Сэтгэгдэл</h2>
+
+    <section class="review-list">
+      <article class="review">
+        <h3>Interstellar <span class="rating">★★★★★</span></h3>
+        <p class="meta">Бүртгэсэн: Бат — 2025-09-28</p>
+        <p>Сэтгэгдэл: Энэхүү кино нь хайр ба шинжлэх ухааныг гайхалтай уялдуулсан.</p>
+      </article>
+
+      <article class="review">
+        <h3>Interstellar <span class="rating">★★★★☆</span></h3>
+        <p class="meta">Бүртгэсэн: Мөнх — 2025-09-26</p>
+        <p>Сэтгэгдэл: Хэтэрхий урт боловч төгсгөл нь сэтгэл хөдөлгөм.</p>
+      </article>
+    </section>
+
+    <aside class="add-review">
+      <h3>Шинэ сэтгэгдэл нэмэх</h3>
+      <form>
+        <label>Таны нэр <input type="text" name="name"></label>
+        <label>Кино нэр <input type="text" name="movie" placeholder="Interstellar"></label>
+        <label>Үнэлгээ
+          <select name="rating">
+            <option>★★★★★</option>
+            <option>★★★★☆</option>
+            <option>★★★☆☆</option>
+            <option>★★☆☆☆</option>
+            <option>★☆☆☆☆</option>
+          </select>
+        </label>
+        <label>Сэтгэгдэл <textarea name="comment"></textarea></label>
+        <button type="button" onclick="alert('Энэ бол demo, сервергүй хувилбар тул хадгалагдахгүй')">Илгээх</button>
+      </form>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Кино Үнэлгээ</p>
+    </div>
+  </footer>
+</body>
+</html>
